@@ -24,13 +24,14 @@ public class Selection_Sort {
     public static void selectionSort_Recursion(int[] array) {
         selectionSort_Recursion(array, 0);
     }
-    public static void selectionSort_Recursion(int[] array,int start){
-        if(start >= array.length-1)return;
+
+    public static void selectionSort_Recursion(int[] array, int start) {
+        if (start >= array.length - 1) return;
 
         int smallestIndex = start;
 
-        for (int i = start+1; i < array.length; i++) {
-            if(array[i] < array[smallestIndex]){
+        for (int i = start + 1; i < array.length; i++) {
+            if (array[i] < array[smallestIndex]) {
                 smallestIndex = i;
             }
         }
