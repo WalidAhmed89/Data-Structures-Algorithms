@@ -158,5 +158,29 @@ public class BreadthFirstSearch {
         }
         return BFSList;
     }
+
+    //Breadth First Search Function Recursion
+    public static ArrayList breadthFirstSearchRecursion( Queue<BinarySearchTreeNode> BFSQueue ,ArrayList<Object> BFSList ) {
+        //first check if the tree is empty or not
+        if (root == null) {
+            return new ArrayList<>();
+        }
+
+        if (BFSQueue.isEmpty()) {
+            return BFSList;
+        }
+
+        BinarySearchTreeNode currentNode = BFSQueue.poll();
+        BFSList.add(currentNode.value);
+        if (currentNode.left != null) {
+            BFSQueue.add(currentNode.left);
+        }
+        if (currentNode.right != null) {
+            BFSQueue.add(currentNode.right);
+        }
+
+        return breadthFirstSearchRecursion(BFSQueue,BFSList);
+    }
+
 }
 
