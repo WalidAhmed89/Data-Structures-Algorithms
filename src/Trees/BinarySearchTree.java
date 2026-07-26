@@ -1,12 +1,24 @@
 package Trees;
 
 public class BinarySearchTree {
-    Binary_Search_Tree_Node root = null;
+    public BinarySearchTree left;
+    public BinarySearchTree right;
+    public int value;
+
+    public BinarySearchTree(){}
+
+    public BinarySearchTree(int value){
+        this.left = null;
+        this.right = null;
+        this.value = value;
+    }
+
+    BinarySearchTree root = null;
 
     //Insert function
     public void insert(int value) {
         //create the new node that need to put in tree
-        Binary_Search_Tree_Node newNode = new Binary_Search_Tree_Node(value);
+        BinarySearchTree newNode = new Binary_Search_Tree_Node(value);
 
         //check if the tree is empty if true will add the root = the new node
         if (this.root == null) {
@@ -14,7 +26,7 @@ public class BinarySearchTree {
             return;
         } else {
             //will check if the new node is grater or less than the current and use the rule of the tree
-            Binary_Search_Tree_Node currentNode = this.root;
+            BinarySearchTree currentNode = this.root;
             while (true) {
                 //left
                 if (value < currentNode.value) {
@@ -36,13 +48,13 @@ public class BinarySearchTree {
     }
 
     //LookUp(Search) Function
-    public Binary_Search_Tree_Node lookUp(int value) {
+    public BinarySearchTree lookUp(int value) {
         //first check if the tree if empty
         if (this.root == null) {
             return null;
         }
         //create current node to travel on it
-        Binary_Search_Tree_Node currentNode = this.root;
+        BinarySearchTree currentNode = this.root;
         //check the rule to save more time complexity
         while (currentNode != null) {
             if (value < currentNode.value) {
@@ -64,8 +76,8 @@ public class BinarySearchTree {
             return false;
         }
         //create current node to travel on it and the save the parent
-        Binary_Search_Tree_Node currentNode = this.root;
-        Binary_Search_Tree_Node parent = null;
+        BinarySearchTree currentNode = this.root;
+        BinarySearchTree parent = null;
         //check the rule to save more time complexity
         while (currentNode != null) {
             if (value < currentNode.value) {
@@ -85,7 +97,7 @@ public class BinarySearchTree {
                         //if parent > current value, make current left child a child of parent
                         if (currentNode.value < parent.value) {
                             parent.left = currentNode.left;
-                        // if parent < current value, make left child a right child of parent
+                            // if parent < current value, make left child a right child of parent
                         } else {
                             parent.right = currentNode.left;
                         }
@@ -99,15 +111,15 @@ public class BinarySearchTree {
                         //if parent > current, make right child of the left the parent
                         if(currentNode.value < parent.value){
                             parent.left = currentNode.right;
-                        // if parent < current , make right child a right child of the parent
+                            // if parent < current , make right child a right child of the parent
                         }else{
                             parent.right = currentNode.right;
                         }
                     }
                 }else{
                     //find the right child's left most child
-                    Binary_Search_Tree_Node leftMost = currentNode.right.left;
-                    Binary_Search_Tree_Node leftMostParent = currentNode.right;
+                    BinarySearchTree leftMost = currentNode.right.left;
+                    BinarySearchTree leftMostParent = currentNode.right;
                     while (leftMost.left != null){
                         leftMostParent = leftMost;
                         leftMost = leftMost.left;
