@@ -18,7 +18,7 @@ public class BinarySearchTree {
     //Insert function
     public void insert(int value) {
         //create the new node that need to put in tree
-        BinarySearchTree newNode = new Binary_Search_Tree_Node(value);
+        BinarySearchTree newNode = new BinarySearchTree(value);
 
         //check if the tree is empty if true will add the root = the new node
         if (this.root == null) {
