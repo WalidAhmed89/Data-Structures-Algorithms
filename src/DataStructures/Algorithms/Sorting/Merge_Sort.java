@@ -1,4 +1,4 @@
-package Algorithms.Sorting;
+package DataStructures.Algorithms.Sorting;
 
 public class Merge_Sort {
 

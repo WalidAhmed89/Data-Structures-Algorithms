@@ -1,4 +1,4 @@
-package Interview;
+package DataStructures.Interview;
 
 public class solution {
 

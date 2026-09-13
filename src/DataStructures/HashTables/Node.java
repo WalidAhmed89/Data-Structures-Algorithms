@@ -1,8 +1,8 @@
-package HashTables;
+package DataStructures.HashTables;
 
 public class  Node {
-    Object key;
-    Object value;
+    public Object key;
+    public Object value;
 
     public Node(Object key,Object value){
         this.key = key;

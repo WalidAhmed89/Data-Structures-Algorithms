@@ -1,4 +1,4 @@
-package Algorithms.DFS;
+package DataStructures.Algorithms.DFS;
 
 import Trees.BinarySearchTree;
 

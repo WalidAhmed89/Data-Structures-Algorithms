@@ -1,4 +1,4 @@
-package Arrays;
+package DataStructures.Arrays.Sorted;
 
 import java.util.Arrays;
 
