@@ -1,12 +1,12 @@
-package LinkedList;
+package DataStructures.LinkedList;
 
 public class SingleLinkedList {
-    private Sinlge_Node head;
-    private Sinlge_Node tail;
+    private Single_Node head;
+    private Single_Node tail;
     private int length;
 
    public void Append(Object item){
-       Sinlge_Node append = new Sinlge_Node(item);
+       Single_Node append = new Single_Node(item);
        if(head == null){
            head = append;
            tail = append;
@@ -20,7 +20,7 @@ public class SingleLinkedList {
    //Prepend is just to add an item in the first of the LinkedList
    public void prepend(Object item){
        //first we will make the new item in a node
-       Sinlge_Node prependItem = new Sinlge_Node(item);
+       Single_Node prependItem = new Single_Node(item);
 
        //second will make the new node to reference to the head
        prependItem.next = head;
@@ -31,7 +31,7 @@ public class SingleLinkedList {
    }
 
    public void showList(){
-       Sinlge_Node current = head;
+       Single_Node current = head;
        while (current != null){
            System.out.println(current.data);
            current = current.next;
@@ -40,10 +40,10 @@ public class SingleLinkedList {
 
    public void insert(Object item,Object position){
        //will create the new node for our item
-       Sinlge_Node itemNode = new Sinlge_Node(item);
+       Single_Node itemNode = new Single_Node(item);
 
        //will loop into linked list to find the position we need to insert on it
-       Sinlge_Node current = head;
+       Single_Node current = head;
        while(current != null && !current.data.equals(position)){
            current = current.next;
        }
@@ -77,7 +77,7 @@ public class SingleLinkedList {
            return;
        }
        //will loop into linked list to find the position we need to insert on it
-       Sinlge_Node current = head;
+       Single_Node current = head;
        while (current.next != null) {
            if (current.next.data.equals(position)) {
                if (head.data.equals(position)) {
@@ -94,9 +94,9 @@ public class SingleLinkedList {
    }
 
    public void reverse(){
-       Sinlge_Node current = head;
-       Sinlge_Node prev = null;
-       Sinlge_Node next;
+       Single_Node current = head;
+       Single_Node prev = null;
+       Single_Node next;
 
        tail = head;
 

@@ -1,4 +1,4 @@
-package Arrays.bulidFormScratch;
+package DataStructures.Arrays.bulidFormScratch;
 
 public class MyArray {
     int length;

@@ -1,4 +1,4 @@
-package Queues;
+package DataStructures.Queues;
 
 public class Queue_with_LinkedList {
     //Variables for the Queue Structure

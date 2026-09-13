@@ -1,4 +1,4 @@
-package Interview;
+package DataStructures.Interview;
 
 import java.util.HashMap;
 import java.util.Map;

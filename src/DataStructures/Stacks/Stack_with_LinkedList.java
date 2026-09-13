@@ -1,4 +1,4 @@
-package Stacks;
+package DataStructures.Stacks;
 
 public class Stack_with_LinkedList {
     //First we need to create the stack structure

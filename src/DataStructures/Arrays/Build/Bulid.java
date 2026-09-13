@@ -1,10 +1,6 @@
-package Arrays;
+package DataStructures.Arrays.Build;
 
 import Arrays.bulidFormScratch.MyArray;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Stack;
 
 public class Bulid {
     static void main(String[] args) {

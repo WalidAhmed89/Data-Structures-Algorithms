@@ -1,4 +1,4 @@
-package Arrays;
+package DataStructures.Arrays.Revers;
 
 public class Revers {
     //Solution 1 (this is clean but not the best because the time complexity O(n^2) Space complexity O(n))
