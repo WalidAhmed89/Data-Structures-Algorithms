@@ -1,6 +1,7 @@
 package DataStructures.Arrays.Build;
 
-import Arrays.bulidFormScratch.MyArray;
+
+import DataStructures.Arrays.bulidFormScratch.MyArray;
 
 public class Bulid {
     static void main(String[] args) {

@@ -1,6 +1,8 @@
 package DataStructures.Algorithms.BFS;
 
-import Trees.BinarySearchTree;
+
+
+import DataStructures.Trees.BinarySearchTree;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
