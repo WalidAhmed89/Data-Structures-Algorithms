@@ -1,4 +1,4 @@
-package DataStructures.HashTables;
+package DataStructures.HashTables.RecurringCharacter;
 
 import java.util.Hashtable;
 

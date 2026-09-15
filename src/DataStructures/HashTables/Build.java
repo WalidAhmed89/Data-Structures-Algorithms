@@ -2,7 +2,8 @@ package DataStructures.HashTables;
 
 import java.util.Hashtable;
 
-import static HashTables.Recurring_Character.recurring;
+import static DataStructures.HashTables.Recurring_Character.recurring;
+
 
 public class Build {
     static void main(String[] args) {
