@@ -1,4 +1,6 @@
-package DataStructures.LinkedList;
+package DataStructures.LinkedList.DoublyLinkedList;
+
+import DataStructures.LinkedList.DoublyLinkedList.Doubly_Node;
 
 public class DoublyLinkedList {
     private Doubly_Node head;
