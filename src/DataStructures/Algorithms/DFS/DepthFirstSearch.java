@@ -2,7 +2,9 @@ package DataStructures.Algorithms.DFS;
 
 
 
-import DataStructures.Trees.BinarySearchTree;
+
+
+import DataStructures.Trees.BinarySearchTree.BinarySearchTree;
 
 import java.util.ArrayList;
 
