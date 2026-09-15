@@ -1,4 +1,4 @@
-package DataStructures.Stacks;
+package DataStructures.Stacks.Stack;
 
 public class Stack_Node {
     Object data;
