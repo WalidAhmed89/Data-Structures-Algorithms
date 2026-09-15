@@ -1,4 +1,4 @@
-package DataStructures.LinkedList;
+package DataStructures.LinkedList.DoublyLinkedList;
 
 public class Doubly_Node {
     Object data;
