@@ -1,4 +1,4 @@
-package DataStructures.HashTables;
+package DataStructures.HashTables.HashMap_Implementation;
 
 public class HashTable {
     private Node[] data;
