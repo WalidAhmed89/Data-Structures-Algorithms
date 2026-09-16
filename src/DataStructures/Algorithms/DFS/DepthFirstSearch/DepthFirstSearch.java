@@ -1,4 +1,4 @@
-package DataStructures.Algorithms.DFS;
+package DataStructures.Algorithms.DFS.DepthFirstSearch;
 
 
 

@@ -8,10 +8,10 @@ public class Interview {
         //this was the arrays we need to check if is matching characters
         char[] chart1 = {'a','b','x','t'};
         char[] chart2 = {'y','s','i','p'};
-        System.out.println(matchingCahrts2(chart1, chart2));
+        System.out.println(matchingCharts2(chart1, chart2));
 
     }
-    public static boolean matchingCahrts(char[] arr1,char[]arr2){
+    public static boolean matchingCharts(char[] arr1,char[]arr2){
         //this solution is not the best solution because in time complexity is O(n^2)
         for (int i = 0; i < arr1.length; i++) {
             for (int j = 0; j < arr2.length; j++) {
@@ -23,7 +23,7 @@ public class Interview {
         return false;
     }
 
-    public static boolean matchingCahrts2(char[] arr1,char[] arr2){
+    public static boolean matchingCharts2(char[] arr1,char[] arr2){
         Map<Character,Boolean> map = new HashMap<>();
         for (int i = 0; i < arr1.length; i++) {
             map.put(arr1[i],true);
