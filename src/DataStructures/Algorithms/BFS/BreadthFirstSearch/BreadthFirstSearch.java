@@ -1,4 +1,4 @@
-package DataStructures.Algorithms.BFS;
+package DataStructures.Algorithms.BFS.BreadthFirstSearch;
 
 
 
@@ -14,7 +14,7 @@ import java.util.Queue;
 //   4        20
 // 1   6   15    170
 
-public class BreadthFirsSearch {
+public class BreadthFirstSearch {
     static BinarySearchTree root = null;
 
     //Breadth First Search Function
