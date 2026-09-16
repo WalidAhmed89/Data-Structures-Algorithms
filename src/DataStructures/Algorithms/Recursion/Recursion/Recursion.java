@@ -1,4 +1,4 @@
-package DataStructures.Algorithms;
+package DataStructures.Algorithms.Recursion.Recursion;
 
 import java.util.ArrayList;
 import java.util.List;
